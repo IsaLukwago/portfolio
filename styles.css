@@ -1,6 +1,3 @@
-/* =========================================================
-   1. DESIGN TOKENS (COLORS, FONTS, SPACING)
-   ========================================================= */
 :root {
   --bg-page: #faf9f6;
   --bg-alt: #f2efe9;
@@ -19,9 +16,6 @@
   --max-width: 1060px;
 }
 
-/* =========================================================
-   2. RESET & BASE STYLES
-   ========================================================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,9 +33,7 @@ body {
   line-height: 1.65;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Fraunces", Georgia, serif;
   color: var(--ink-primary);
   line-height: 1.2;
@@ -53,13 +45,10 @@ h3 {
   padding: 0 24px;
 }
 
-/* =========================================================
-   3. STICKY NAVIGATION HEADER
-   ========================================================= */
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(250, 249, 246, 0.92);
+  background: rgba(250, 249, 246, 0.94);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-subtle);
   z-index: 100;
@@ -150,9 +139,6 @@ h3 {
   cursor: pointer;
 }
 
-/* =========================================================
-   4. HERO SECTION & 3 PILLAR CARDS
-   ========================================================= */
 .hero {
   padding: 72px 0 64px;
 }
@@ -280,9 +266,6 @@ h3 {
   color: var(--ink-secondary);
 }
 
-/* =========================================================
-   5. CONTENT SECTIONS & FEATURE CALLOUT
-   ========================================================= */
 .section {
   padding: 72px 0;
   border-top: 1px solid var(--border-subtle);
@@ -359,9 +342,6 @@ h3 {
   font-weight: 600;
 }
 
-/* =========================================================
-   6. FOUR-CARD APPROACH GRID
-   ========================================================= */
 .four-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -392,9 +372,6 @@ h3 {
   color: var(--ink-secondary);
 }
 
-/* =========================================================
-   7. SKILLS FOCUS CARDS & 4-STAT SUMMARY BAR
-   ========================================================= */
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -421,6 +398,7 @@ h3 {
 
 .focus-icon {
   font-size: 1.6rem;
+  display: inline-block;
   margin-bottom: 12px;
 }
 
@@ -476,9 +454,6 @@ h3 {
   opacity: 0.9;
 }
 
-/* =========================================================
-   8. PROJECTS SECTION
-   ========================================================= */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -513,3 +488,81 @@ h3 {
 
 .status-badge {
   background: var(--brand-soft);
+  color: var(--brand-green);
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+
+.badge-upcoming {
+  background: var(--accent-gold-soft);
+  color: var(--accent-gold);
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: var(--ink-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.info-icon {
+  font-size: 1.4rem;
+  background: var(--brand-soft);
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+}
+
+.info-card p,
+.info-card a {
+  color: var(--ink-primary);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.info-card a:hover {
+  color: var(--brand-green);
+  text-decoration: underline;
+}
+
+.form-card {
+  background: var(--bg-card);
