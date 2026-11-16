@@ -3,195 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Isa Lukwago — Computer Science Student at University of the People learning Python, Java, and Web Development." />
-  <title>Isa Lukwago | Computer Science Student</title>
+  <meta name="description" content="Isa Lukwago — Computer Science Student in Kampala, Uganda. Learn. Build. Grow." />
+  <title>Isa Lukwago | Learn. Build. Grow.</title>
+  <!-- Editorial Fonts -->
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Subtle Background Glow -->
-  <div class="bg-glow" aria-hidden="true"></div>
-
   <!-- Top Navigation -->
   <header class="site-header">
     <div class="container nav-wrapper">
-      <a href="#" class="logo">Isa<span>.dev</span></a>
-      <nav aria-label="Primary Navigation" class="nav-right">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle Light or Dark Theme">
-          ☀️
-        </button>
+      <a href="#" class="brand">
+        <span class="brand-mark">IL</span>
+        <span class="brand-text">
+          <strong>ISA LUKWAGO</strong>
+          <small>Computer Science Student</small>
+        </span>
+      </a>
+
+      <button id="menu-toggle" class="menu-btn" type="button" aria-label="Toggle Menu">&#9776;</button>
+
+      <nav id="primary-nav" class="nav-menu" aria-label="Primary Navigation">
+        <a href="#about">About</a>
+        <a href="#approach">Approach</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-cta">Get in touch &rarr;</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <!-- Split Hero Section -->
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="status-pill">
-            <span class="pulse-dot"></span>
-            B.Sc. Computer Science Student &bull; Kampala, Uganda
-          </div>
-          <h1>Hi, I'm <span class="gradient-text">Isa Lukwago</span>.<br>Building strong foundations in software.</h1>
-          <p class="hero-summary">
-            Studying Computer Science at University of the People. Focused on mastering Python, Java, HTML, CSS, and JavaScript step by step through honest, hands-on engineering.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Explore My Work</a>
-            <a href="#contact" class="btn btn-outline">Connect With Me</a>
-          </div>
+      <div class="container">
+        <p class="kicker">&#10022; B.Sc. Computer Science Track &bull; University of the People</p>
+        <h1>ISA LUKWAGO <em>Learn. Build. Grow.</em></h1>
+        <p class="hero-lead">
+          Honest foundations. Practical code. Steady growth. Building my skills in Python, Java, and web development from the ground up in Kampala, Uganda.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Connect with me &#8599;</a>
+          <a href="#skills" class="btn btn-secondary">Explore my focus areas &darr;</a>
         </div>
 
-        <!-- Visual Developer Card (100% Honest Profile Snippet) -->
-        <div class="code-window" aria-label="Developer profile summary">
-          <div class="window-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="window-title">isa_profile.json</span>
+        <p class="location-note">&#128205; Kampala, Uganda</p>
+
+        <!-- 3 Pillar Cards -->
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-icon">&#9881;</span>
+            <div>
+              <strong>LEARN</strong>
+              <p><strong>Core</strong> computer science &amp; logic</p>
+            </div>
           </div>
-          <pre class="code-body"><code>{
-  <span class="key">"name"</span>: <span class="str">"Isa Lukwago"</span>,
-  <span class="key">"location"</span>: <span class="str">"Kampala, Uganda"</span>,
-  <span class="key">"university"</span>: <span class="str">"University of the People"</span>,
-  <span class="key">"foundations"</span>: [
-    <span class="str">"Python"</span>, <span class="str">"Java"</span>,
-    <span class="str">"HTML5"</span>, <span class="str">"CSS3"</span>, <span class="str">"JavaScript"</span>
-  ],
-  <span class="key">"next_milestone"</span>: <span class="str">"SQL &amp; Databases"</span>,
-  <span class="key">"open_to"</span>: <span class="str">"Mentorship &amp; Junior Tasks"</span>
-}</code></pre>
+          <div class="pillar-card">
+            <span class="pillar-icon">&#128161;</span>
+            <div>
+              <strong>BUILD</strong>
+              <p><strong>Clean</strong>, honest, practical projects</p>
+            </div>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">&#127793;</span>
+            <div>
+              <strong>GROW</strong>
+              <p><strong>Step-by-step</strong> software mastery</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Section 01: About / Who I Am -->
     <section id="about" class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">01 // Background</span>
-          <h2>About Me</h2>
-        </div>
-        <div class="about-card">
+        <span class="section-label">Who I am</span>
+        <h2>Building strong foundations in software engineering.</h2>
+        <p class="section-intro">
+          I am an undergraduate Computer Science student at University of the People working to turn programming fundamentals into practical, reliable software tools. Rather than exaggerating my experience, I believe in mastering every concept thoroughly and documenting my progress publicly.
+        </p>
+
+        <div class="feature-callout">
+          <span class="mono-tag">01 / background</span>
+          <h3>Grounded in Kampala. Focused on real problem-solving.</h3>
           <p>
-            I am an undergraduate Computer Science student committed to mastering the core fundamentals of programming, problem-solving, and web development from the ground up. Rather than inflating my resume, I believe in building real skills steadily, writing clean code, and documenting every milestone publicly.
+            Great software starts with understanding everyday challenges—from lightweight websites that load quickly on mobile data to structured programs that solve real organizational needs.
           </p>
+          <div class="pill-row">
+            <span class="pill">Student-centred</span>
+            <span class="pill">Hands-on</span>
+            <span class="pill">Honest</span>
+            <span class="pill">Growth-minded</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
+    <!-- Section 02: How I Work -->
+    <section id="approach" class="section section-alt">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">02 // Portfolio</span>
-          <h2>Current Projects</h2>
+        <span class="section-label">How I learn &amp; build</span>
+        <h2>Four principles guiding my engineering journey.</h2>
+        <p class="section-intro">
+          Writing code is only part of the craft. Structuring projects cleanly, testing thoroughly, and learning consistently matter just as much.
+        </p>
+
+        <div class="four-grid">
+          <article class="step-card">
+            <span class="step-icon">&#128736;</span>
+            <h3>01. Clean web structure</h3>
+            <p>Write semantic HTML5 and modular CSS3 so every interface is accessible, fast, and responsive on any screen.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-icon">&#128200;</span>
+            <h3>02. Core programming logic</h3>
+            <p>Practice problem-solving, data structures, and object-oriented programming fundamentals in Python and Java.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-icon">&#129309;</span>
+            <h3>03. Transparent progress</h3>
+            <p>Present my skills accurately—clearly distinguishing current foundations from technologies I am actively studying next.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-icon">&#128279;</span>
+            <h3>04. Modern deployment workflow</h3>
+            <p>Version-control every project with Git and GitHub and deploy live builds continuously using Netlify.</p>
+          </article>
         </div>
-        <div class="project-grid">
-          <article class="card project-card">
-            <div class="card-top">
-              <span class="badge-live">Live &amp; Deployed</span>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">Source Code &rarr;</a>
+      </div>
+    </section>
+
+    <!-- Section 03: Skills & Focus Areas -->
+    <section id="skills" class="section">
+      <div class="container">
+        <span class="section-label">Skills with possibilities</span>
+        <h2>Explore my technical focus areas.</h2>
+        <p class="section-intro">
+          Here is an honest snapshot of the technologies I currently work with at a foundational level and the next milestone on my learning roadmap.
+        </p>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="focus-icon">&#128187;</span>
+            <h3>HTML5 &amp; CSS3</h3>
+            <p>Build semantic, mobile-responsive webpage layouts using Flexbox, CSS Grid, and clean design variables.</p>
+            <span class="focus-tag">WEB FOUNDATIONS &bull; BASICS</span>
+          </article>
+
+          <article class="focus-card">
+            <span class="focus-icon">&#9889;</span>
+            <h3>JavaScript (ES6+)</h3>
+            <p>Add interactive DOM behavior, form handling, and dynamic user feedback without heavy frameworks.</p>
+            <span class="focus-tag">INTERACTIVITY &bull; BASICS</span>
+          </article>
+
+          <article class="focus-card">
+            <span class="focus-icon">&#128013;</span>
+            <h3>Python</h3>
+            <p>Write clear scripts, functions, and foundational algorithms while building toward backend automation.</p>
+            <span class="focus-tag">PROGRAMMING &bull; BASICS</span>
+          </article>
+
+          <article class="focus-card">
+            <span class="focus-icon">&#9749;</span>
+            <h3>Java</h3>
+            <p>Learn strongly-typed programming, classes, and object-oriented design principles through CS coursework.</p>
+            <span class="focus-tag">OOP FUNDAMENTALS &bull; BASICS</span>
+          </article>
+
+          <article class="focus-card">
+            <span class="focus-icon">&#128451;</span>
+            <h3>SQL &amp; Databases</h3>
+            <p>Upcoming milestone: mastering relational tables, queries, and persistent data storage for full-stack apps.</p>
+            <span class="focus-tag tag-next">NEXT MILESTONE &bull; LEARNING NEXT</span>
+          </article>
+        </div>
+
+        <!-- 4-Stat Summary Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <strong>5</strong>
+            <span>Core foundations</span>
+          </div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>Honest &amp; verifiable</span>
+          </div>
+          <div class="stat-item">
+            <strong>B.Sc.</strong>
+            <span>Computer Science track</span>
+          </div>
+          <div class="stat-item">
+            <strong>1</strong>
+            <span>Live CI/CD portfolio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <span class="section-label">Portfolio builds</span>
+        <h2>Current projects &amp; milestones.</h2>
+        <p class="section-intro">
+          Every project listed here is live, open-source, and built step by step as part of my practical training.
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="status-badge">Live on Netlify</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">View source on GitHub &#8599;</a>
             </div>
             <h3>Personal Portfolio &amp; CI/CD Workflow</h3>
             <p>
-              Designed and coded from scratch using semantic HTML5, modern CSS3 variables, and vanilla JavaScript, with automated GitHub-to-Netlify deployment.
+              Designed and engineered from scratch using semantic HTML5, responsive CSS3, and vanilla JavaScript—version-controlled on GitHub under an MIT License with automatic Netlify deployment.
             </p>
-            <ul class="tag-list">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>Git &amp; Netlify</li>
-            </ul>
-          </article>
-
-          <article class="card project-card">
-            <div class="card-top">
-              <span class="badge-progress">In Progress</span>
-            </div>
-            <h3>Core Programming &amp; SQL Roadmap</h3>
-            <p>
-              Strengthening my practical command of JavaScript DOM interactivity, Python scripting, Java OOP fundamentals, and starting relational databases (SQL).
-            </p>
-            <ul class="tag-list">
-              <li>Python</li>
-              <li>Java</li>
-              <li>JavaScript</li>
-              <li>SQL (Next)</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">03 // Stack</span>
-          <h2>Skills &amp; Learning Path</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="card">
-            <h3>Web Foundations</h3>
-            <p class="card-desc">Building responsive, accessible interfaces from scratch.</p>
-            <ul class="tag-list">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript (Basics)</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Programming Languages</h3>
-            <p class="card-desc">Core coursework and problem-solving fundamentals.</p>
-            <ul class="tag-list">
-              <li>Python</li>
-              <li>Java (Basics)</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Tools &amp; Next Focus</h3>
-            <p class="card-desc">Version control workflow and upcoming database studies.</p>
-            <ul class="tag-list">
-              <li>Git &amp; GitHub</li>
-              <li>Netlify</li>
-              <li>SQL (Learning Next)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-box">
-          <span class="section-tag">04 // Connect</span>
-          <h2>Let's Work &amp; Learn Together</h2>
-          <p>Open to mentorship, study collaborations, junior internships, and beginner-friendly web or coding tasks.</p>
-          <div class="contact-links">
-            <a href="mailto:IsaLukwago@my.uopeople.edu" class="btn btn-primary">Email Isa Lukwago</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profile</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year">2026</span> Isa Lukwago &bull; Built with clean code in Kampala, Uganda.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+            <div class="pill-row">
+              <span class="pill">HTML5</span>
